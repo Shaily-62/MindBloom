@@ -11,8 +11,8 @@ const Landing = () => {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
-            transition: { 
-                staggerChildren: 0.2, 
+            transition: {
+                staggerChildren: 0.2,
                 delayChildren: 0.3
             }
         }
@@ -20,10 +20,10 @@ const Landing = () => {
 
     const itemVars = {
         hidden: { y: 20, opacity: 0 },
-        visible: { 
-            y: 0, 
+        visible: {
+            y: 0,
             opacity: 1,
-            transition: { 
+            transition: {
                 duration: 0.6,
                 ease: "easeOut"
             }
@@ -36,17 +36,17 @@ const Landing = () => {
 
             {/* Subtle Background Elements */}
             <div className="fixed inset-0 pointer-events-none opacity-40">
-                <motion.div 
-                    animate={{ 
-                        x: [0, 30, 0], 
+                <motion.div
+                    animate={{
+                        x: [0, 30, 0],
                         y: [0, -20, 0]
                     }}
                     transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
                     className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-200/40 to-transparent rounded-full blur-3xl"
                 />
-                <motion.div 
-                    animate={{ 
-                        x: [0, -30, 0], 
+                <motion.div
+                    animate={{
+                        x: [0, -30, 0],
                         y: [0, 20, 0]
                     }}
                     transition={{ duration: 30, repeat: Infinity, ease: "easeInOut" }}
@@ -61,14 +61,14 @@ const Landing = () => {
                 className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 py-24 text-center"
             >
                 {/* Simple Decorative Elements */}
-                <motion.div 
+                <motion.div
                     animate={{ y: [0, -10, 0] }}
                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                     className="absolute top-32 left-[10%] text-6xl opacity-30 hidden lg:block"
                 >
                     🌱
                 </motion.div>
-                <motion.div 
+                <motion.div
                     animate={{ y: [0, 10, 0] }}
                     transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                     className="absolute bottom-32 right-[10%] text-6xl opacity-30 hidden lg:block"
