@@ -12,7 +12,12 @@ import ParentLogin from "./pages/ParentLogin";
 import ParentDashboard from "./pages/ParentDashboard";
 import ChildProgress from "./pages/ChildProgress";
 import ParentChatbot from "./pages/ParentChatbot";
+
 import CharacterStory from "./pages/StoryPage"
+
+import Signup from "./pages/Signup";
+import DyslexiaScreening from "./pages/DyslexiaScreening";
+
 
 function App() {
   return (
@@ -31,6 +36,9 @@ function App() {
       <Route path="/Choose-Character" element={<CharacterSelection />} />
       <Route path="/Story-Page" element={<CharacterStory />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/dyslexia-screening" element={<DyslexiaScreening />} />
+
       {/* Optional: catch-all 404 route */}
       <Route
         path="*"
